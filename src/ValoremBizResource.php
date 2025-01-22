@@ -1,13 +1,13 @@
 <?php
 
-namespace ValoremPay;
+namespace ValoremBiz;
 
 use Saloon\Http\{BaseResource, Response};
-use ValoremPay\Contracts\HistoryInterface;
-use ValoremPay\Contracts\PaymentInterface;
-use ValoremPay\Requests\Payment\{CancelPaymentRequest, CreatePaymentRequest, TransactionHistoryRequest};
+use ValoremBiz\Contracts\HistoryInterface;
+use ValoremBiz\Contracts\PaymentInterface;
+use ValoremBiz\Requests\Payment\{CancelPaymentRequest, CreatePaymentRequest, TransactionHistoryRequest};
 
-class ValoremPayResource extends BaseResource
+class ValoremBizResource extends BaseResource
 {
     public function createPayment(PaymentInterface $payment): Response
     {

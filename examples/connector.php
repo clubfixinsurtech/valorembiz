@@ -9,4 +9,4 @@ if (!$token && is_readable(__DIR__ . '/config.php')) {
     $token = $config['token'];
 }
 
-return new \ValoremPay\ValoremPayConnector(token: $token);
+return new \ValoremBiz\ValoremBizConnector(token: $token);

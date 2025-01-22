@@ -1,12 +1,12 @@
 <?php
 
-namespace ValoremPay\Requests\Payment;
+namespace ValoremBiz\Requests\Payment;
 
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Traits\Body\HasJsonBody;
-use ValoremPay\Contracts\PaymentInterface;
+use ValoremBiz\Contracts\PaymentInterface;
 
 class CreatePaymentRequest extends Request implements HasBody
 {

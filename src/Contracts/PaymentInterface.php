@@ -1,6 +1,6 @@
 <?php
 
-namespace ValoremPay\Contracts;
+namespace ValoremBiz\Contracts;
 
 interface PaymentInterface extends HasPayloadInterface
 {

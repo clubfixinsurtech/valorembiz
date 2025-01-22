@@ -1,6 +1,6 @@
 <?php
 
-namespace ValoremPay\Requests\Payment;
+namespace ValoremBiz\Requests\Payment;
 
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;

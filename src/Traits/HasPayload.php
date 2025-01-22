@@ -1,8 +1,8 @@
 <?php
 
-namespace ValoremPay\Traits;
+namespace ValoremBiz\Traits;
 
-use ValoremPay\Helpers\ReflectionalProperties;
+use ValoremBiz\Helpers\ReflectionalProperties;
 
 trait HasPayload
 {
