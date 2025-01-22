@@ -1,11 +1,11 @@
 <?php
 
-namespace ValoremPay\Entities;
+namespace ValoremBiz\Entities;
 
-use ValoremPay\Contracts\HistoryInterface;
-use ValoremPay\Traits\{ConditionableTrait, HasPayload};
-use ValoremPay\Enums\PaymentStatusEnum;
-use ValoremPay\Helpers\PropertyValidator;
+use ValoremBiz\Contracts\HistoryInterface;
+use ValoremBiz\Traits\{ConditionableTrait, HasPayload};
+use ValoremBiz\Enums\PaymentStatusEnum;
+use ValoremBiz\Helpers\PropertyValidator;
 
 class TransactionHistory implements HistoryInterface
 {

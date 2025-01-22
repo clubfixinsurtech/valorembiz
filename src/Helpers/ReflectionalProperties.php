@@ -1,6 +1,6 @@
 <?php
 
-namespace ValoremPay\Helpers;
+namespace ValoremBiz\Helpers;
 
 class ReflectionalProperties
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ValoremPay\Entities;
+namespace ValoremBiz\Entities;
 
-use ValoremPay\Contracts\HasPayloadInterface;
-use ValoremPay\Helpers\{PropertyValidator, RequiredFields};
-use ValoremPay\Traits\{ConditionableTrait, HasPayload};
+use ValoremBiz\Contracts\HasPayloadInterface;
+use ValoremBiz\Helpers\{PropertyValidator, RequiredFields};
+use ValoremBiz\Traits\{ConditionableTrait, HasPayload};
 
 class Card implements HasPayloadInterface
 {

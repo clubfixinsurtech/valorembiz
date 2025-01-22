@@ -1,6 +1,6 @@
 <?php
 
-namespace ValoremPay\Traits;
+namespace ValoremBiz\Traits;
 
 trait ConditionableTrait
 {

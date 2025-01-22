@@ -1,10 +1,10 @@
 <?php
 
-namespace ValoremPay\Requests\Payment;
+namespace ValoremBiz\Requests\Payment;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use ValoremPay\Contracts\HistoryInterface;
+use ValoremBiz\Contracts\HistoryInterface;
 
 class TransactionHistoryRequest extends Request
 {

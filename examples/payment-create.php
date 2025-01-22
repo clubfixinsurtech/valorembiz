@@ -1,18 +1,18 @@
 <?php
 
 /**
- * @var \ValoremPay\ValoremPayConnector $connector
+ * @var \ValoremBiz\ValoremBizConnector $connector
  */
 $connector = include __DIR__ . '/connector.php';
 
 // Create payment
-$payment = new \ValoremPay\Entities\CreatePayment(
+$payment = new \ValoremBiz\Entities\CreatePayment(
     valor: 99.99,
     numeroDeParcelas: 1,
-    qtdeCartoes: \ValoremPay\Enums\CardQuantityEnum::ONE,
+    qtdeCartoes: \ValoremBiz\Enums\CardQuantityEnum::ONE,
 );
 $payment->setCartoes(
-    new \ValoremPay\Entities\Card(
+    new \ValoremBiz\Entities\Card(
         valor: 99.99,
         numeroDoCartao: '5448280000000007',
         codigoSeguranca: '123',
@@ -23,7 +23,7 @@ $payment->setCartoes(
     )
 );
 
-$request = $connector->valoremPay()->createPayment($payment);
+$request = $connector->valoremBiz()->createPayment($payment);
 $response = $request->json();
 
 dump($request, $response);

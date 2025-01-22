@@ -1,6 +1,6 @@
 <?php
 
-namespace ValoremPay\Enums;
+namespace ValoremBiz\Enums;
 
 enum CardQuantityEnum: string
 {
