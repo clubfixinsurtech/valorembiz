@@ -1,8 +1,8 @@
 <?php
 
-namespace ValoremPay\Helpers;
+namespace ValoremBiz\Helpers;
 
-use ValoremPay\Exceptions\ValidatorException;
+use ValoremBiz\Exceptions\ValidatorException;
 
 class Validator
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace ValoremPay\Entities;
+namespace ValoremBiz\Entities;
 
-use ValoremPay\Contracts\PaymentInterface;
-use ValoremPay\Enums\CardQuantityEnum;
-use ValoremPay\Helpers\{PropertyValidator, RequiredFields};
-use ValoremPay\Traits\{ConditionableTrait, HasPayload};
+use ValoremBiz\Contracts\PaymentInterface;
+use ValoremBiz\Enums\CardQuantityEnum;
+use ValoremBiz\Helpers\{PropertyValidator, RequiredFields};
+use ValoremBiz\Traits\{ConditionableTrait, HasPayload};
 
 class CreatePayment implements PaymentInterface
 {

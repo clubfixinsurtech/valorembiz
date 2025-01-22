@@ -42,7 +42,7 @@ abstract class RequestTestCase extends TestCase
 
     protected function assertPreConditions(): void
     {
-        $class = substr(str_replace('Tests\Unit\\', 'ValoremPay\\', get_class($this)), 0, -4);
+        $class = substr(str_replace('Tests\Unit\\', 'ValoremBiz\\', get_class($this)), 0, -4);
 
         $this->assertTrue(class_exists($class), "Class $class does not exist");
         $this->assertEquals($class, get_class($this->requestClass()));

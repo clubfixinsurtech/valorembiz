@@ -1,10 +1,10 @@
 <?php
 
-namespace ValoremPay;
+namespace ValoremBiz;
 
 use Saloon\Http\Connector;
 
-class ValoremPayConnector extends Connector
+class ValoremBizConnector extends Connector
 {
     public function __construct(
         private readonly string $token,
@@ -23,9 +23,9 @@ class ValoremPayConnector extends Connector
         return 'https://external-api.checkout.valorem.com.br/api/v1';
     }
 
-    public function valoremPay(): ValoremPayResource
+    public function valoremBiz(): ValoremBizResource
     {
-        return new ValoremPayResource($this);
+        return new ValoremBizResource($this);
     }
 
     protected function defaultHeaders(): array

@@ -1,6 +1,6 @@
 <?php
 
-namespace ValoremPay\Exceptions;
+namespace ValoremBiz\Exceptions;
 
 class ValidatorException extends \Exception
 {

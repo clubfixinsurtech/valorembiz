@@ -1,23 +1,23 @@
 <?php
 
 /**
- * @var \ValoremPay\ValoremPayConnector $connector
+ * @var \ValoremBiz\ValoremBizConnector $connector
  */
 $connector = include __DIR__ . '/connector.php';
 
 // Transaction history
-$history = new \ValoremPay\Entities\TransactionHistory();
-$history->setStatus(\ValoremPay\Enums\PaymentStatusEnum::SUCCESS);
+$history = new \ValoremBiz\Entities\TransactionHistory();
+$history->setStatus(\ValoremBiz\Enums\PaymentStatusEnum::SUCCESS);
 $history->setTamanhoDaPagina(1);
 
-$request = $connector->valoremPay()->getTransactionHistory($history);
+$request = $connector->valoremBiz()->getTransactionHistory($history);
 $paymentId = $request->json('data.itens.0.pagamentoId');
 if (!$paymentId) {
     throw new \Exception('Payment not found');
 }
 
 // Cancel payment
-$request = $connector->valoremPay()->cancelPayment($paymentId);
+$request = $connector->valoremBiz()->cancelPayment($paymentId);
 $response = $request->json();
 
 dump($request, $response);
